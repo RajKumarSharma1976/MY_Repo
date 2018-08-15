@@ -1,0 +1,4 @@
+awk '20180129 == 20180129 { count++ } END { print count }' attadance
+ awk '/[Hh]rishab/ { print $1 }' attadance|wc -l
+awk '$1 >= 404136008450321 && $1 <= 404136008450324 {print $0}' abc1.csv
+ls -ltr|awk '{sm[$4]=sm[$4]+$5;ct[$4]=ct[$4]+1 } END{for  (i in sm ){print i " = " sm[i] " count= " ct[i]}}'
